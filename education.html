@@ -9,43 +9,61 @@
         td {
             border: 1px solid black;
             /* border-collapse: collapse; */
-            background-color: yellowgreen;
+            background-color: rgb(180, 211, 118);
             font-style: Bold;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             width: 700px;
-            height: 50px;
+
+            /* height: 30px; */
         }
-        
+
+        table.center {
+            margin-left: auto;
+            margin-right: auto; 
+        }
+
+        .td {
+            padding-left: 30px;
+        }
+
+        .tdata {
+            padding-left: 10px;
+        }
+        h3{
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: darkblue;
+        }
     </style>
 </head>
 
 <body>
-    <h3>EDUCATION DETAILS :</h3>
-    <table>
+    <h3 style="text-align:center ;"><span style="background-color: yellowgreen ;">EDUCATION DETAILS</span>  </h3>
+    <table class="center">
         <tr>
-            <td align="center" ><strong> Education</strong></td>
-       <td align="center"> <strong>School / College</strong></td>
-            <td align="center"> <strong>University</strong></td>
-            <td align="center"><strong>Percentage</strong></td>
+            <td class="td"><strong> Education</strong></td>
+            <td class="td"> <strong>School / College</strong></td>
+            <td class="td"> <strong>University</strong></td>
+            <td class="td"><strong>Percentage</strong></td>
         </tr>
         <tr>
-            <td align="center"><strong>Graduation</strong></td>
-            <td><strong>K.T.H.M. College,Nashik</strong></td>
-            <td><strong>Savitribai Phule Pune University</strong></td>
-            <td><strong>&nbsp;&nbsp;60%</strong></td>
+            <td class="td"> <strong>Graduation</strong></td>
+            <td class="tdata"><strong>K.T.H.M. College,Nashik</strong></td>
+            <td class="tdata"><strong>Pune University</strong></td>
+            <td class="tdata"><strong>60%</strong></td>
         </tr>
         <tr>
-            <td align="center"><strong>HSC</strong></td>
-            <td><strong>KSKW College,Nashik</strong></td>
-            <td><strong>Pune University</strong></td>
-            <td><strong>&nbsp;&nbsp;62%</strong></td>
+            <td class="td"><strong>HSC</strong></td>
+            <td class="tdata"> <strong>KSKW College,Nashik</strong></td>
+            <td class="tdata"><strong>Pune University</strong></td>
+            <td class="tdata"> <strong>62%</strong></td>
         </tr>
-        
+
         <tr>
-            <td align="center"><strong>SSC</strong></td>
-            <td><strong>K.B.H. Vidyalaya,Nashik</strong></td>
-            <td><strong>Pune University</strong></td>
-            <td><strong>&nbsp;&nbsp;80%</strong></td>
+            <td class="td"><strong>SSC</strong></td>
+            <td class="tdata"><strong>K.B.H. Vidyalaya,Nashik</strong></td>
+            <td class="tdata"><strong>Pune University</strong></td>
+            <td class="tdata"><strong>80%</strong></td>
         </tr>
     </table>
 </body>

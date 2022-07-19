@@ -3,6 +3,25 @@
 
 <head>
     <title> Registration Form </title>
+    <style>
+        label {
+            text-shadow: 3px 3px 6px cadetblue;
+            color: rgb(25, 78, 78);
+        }
+        input[type="text"], input[type="number"], input[type="email"], textarea {
+            color: darkgoldenrod;
+            text-transform: capitalize;
+            border-radius: 10px;
+           
+        }
+        input[type="submit"]:hover{
+            background-color: darkgoldenrod;
+        }
+        input:focus{
+            background-color: rgb(115, 155, 156);
+        }
+
+    </style>
 </head>
 
 <body>
@@ -16,23 +35,23 @@
         <table>
             <tbody>
                 <tr>
-                    <td><lable for="firstName">First Name</lable></td>
+                    <td><label for="firstName">First Name</lable></td>
                     <td><input type="text" id="firstName" placeholder="Only First Name"> </td>
                 </tr>
                 <tr>
-                    <td><lable for="lastNAme">Last Name</lable></td>
+                    <td><label for="lastNAme">Last Name</lable></td>
                     <td> <input type="text" id="lastNAme"> </td>
                 </tr>
                 <tr>
-                    <td><lable for="mobileNumber">Mobile Number </lable></td>
+                    <td><label for="mobileNumber">Mobile Number </lable></td>
                     <td> <input type="number" id="mobileNumber" maxlength="10" required  autofocus placeholder="Please enter with coutry code"> </td>
                 </tr>
                 <tr>
-                    <td><lable for="email">Email</lable></td>
+                    <td><label for="email">Email</lable></td>
                     <td> <input type="email" id="email" required> </td>
                 </tr>
                 <tr>
-                    <td><lable for="pwd">Password</lable></td>
+                    <td><label for="pwd">Password</lable></td>
                     <td> <input type="password" maxlength="7" id="pwd" required> </td>
                 </tr>
                 <tr>

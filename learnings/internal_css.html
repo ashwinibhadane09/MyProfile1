@@ -4,65 +4,116 @@
 <head>
     <title> Internal Css </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
     <Style>
-            /* p,h5{
+        /* p,h5{
                 color: cadetblue;
                 font-size: 30px;
             } */
-          .para{
-                color: cadetblue;
-                font-size: 30px;
-                text-align: center;
-            }
-            .para1{
-                background-color: cadetblue;
-                /* border-style: solid;
+        .para {
+            color: cadetblue;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .para1 {
+            background-color: cadetblue;
+            /* border-style: solid;
                 border-width: 5px;
                 border-color: red; */
-                border: 2px solid red;
-                border-radius: 20px;
-                width: 200px;
-                height: 30px;
-                padding-left: 10px;
-                padding-top: 10px;
-                padding-right: 10px;
-                padding-bottom: 10px;
-                margin-top: 50px;
-            }
-            /* h4{
+            border: 2px solid red;
+            border-radius: 20px;
+            width: 200px;
+            height: 30px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+
+        /* h4{
                 color:red;
                 font-size: 40px;
             } */
-            /* #heading_7,h3,.para{
+        /* #heading_7,h3,.para{
                 color:burlywood;
                 
             } */
-            /* Universal selector */
-            /* color:rgb(255,255,255) */
-            /* *{
+        /* Universal selector */
+        /* color:rgb(255,255,255) */
+        /* *{
                 
                 
                 color:burlywood;
                 font-size: larger;
             } */
-            body{
-                /* background-image: url(../resources/eonitpark.png); */
-                background-image: url("developer.png");
-                background-repeat: no-repeat;
-                background-position: center;
-                /* background-size: cover; */
-                height: 500px;
-                font-family: 'Sofia', cursive;
-            }
-            ul{
-                list-style: square;
-            }
+        body {
+            /* background-image: url(../resources/eonitpark.png); */
+            background-image: url("developer.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            /* background-size: cover; */
+            height: 500px;
+            font-family: 'Sofia', cursive;
+        }
+
+        #ul {
+            list-style: square;
+            float: right;
+        }
+
+        table {
+            border: 1px dotted cadetblue;
+            margin-top: 30px;
+            margin-left: 30px;
+            /* border-collapse: collapse; */
+            width: 80%;
+
+        }
+
+        th,
+        td {
+            /* border: 1px solid cadetblue; */
+            text-align: left;
+            padding: 10px;
+        }
+
+        th {
+            background-color: rgb(218, 173, 120);
+        }
+
+        td {
+            background-color: azure;
+        }
+
+        #summary {
+            text-shadow: 3px 3px 6px;
+        }
+
+        .summary {
+            text-shadow: 3px 3px 6px cadetblue;
+            text-transform: uppercase;
+        }
+        #overflow_prop{
+            width: 200px;
+            height: 200px;
+            border: 1px solid cadetblue;
+            overflow: auto;
+            box-shadow: 5px 5px 5px ;
+         }
+
     </Style>
 </head>
 
 <body>
+    <ul id="ul">
+        <li>Reading educational book</li>
+        <li>Listening music </li>
+        <li>Drawing Mandala art</li>
+        <li>Learning new things</li>
+    </ul>
     <ul>
         <li>Reading educational book</li>
         <li>Listening music </li>
@@ -70,17 +121,55 @@
         <li>Learning new things</li>
     </ul>
 
+    <p id="overflow_prop">  the main body of a book or other piece of writing, as distinct from other material such as notes, appendices, and illustrations.
+        "the pictures are clear and relthe main body of a book or other piece of writing, as distinct from other material such as notes, appendices, and illustrations.
+        "the pictures are clear and relthe main body of a book or other piece of writing, as distinct from other material such as notes, appendices, and illustrations.
+     "the pictures are clear and relthe main body of a book or other piece of writing, as distinct from other material such as notes, appendices, and illustrations.
+     </p>
+
+
     <p class="para1">This is a Paragraph 1</p>
     <p class="para">This is a Paragraph 2</p>
 
-    <p>This is a Paragraph 3</p>
+    <p class="summary">
+        <marquee direction="left" width="700px" height="30px" behavior="sliding"> PROFESSIONAL SUMMARY </marquee>
+        </marquee> This is a Paragraph 3
+    </p>
     <h4>This is a heading 4</h4>
     <h4>This is a heading 5</h4>
     <h4 id="heading_7">This is a heading 6</h4>
     <h4>This is a heading 7</h4>
-    
-    <h5>This is a heading 5</h5>
+
+    <h5 id="summary">This is a heading 5</h5>
     <h3>This is a heading 3</h3>
+
+    <table class="center">
+        <tr>
+            <td class="td"><strong> Education</strong></td>
+            <td class="td"> <strong>School / College</strong></td>
+            <td class="td"> <strong>University</strong></td>
+            <td class="td"><strong>Percentage</strong></td>
+        </tr>
+        <tr>
+            <td class="td"> <strong>Graduation</strong></td>
+            <td class="tdata"><strong>K.T.H.M. College,Nashik</strong></td>
+            <td class="tdata"><strong>Pune University</strong></td>
+            <td class="tdata"><strong>60%</strong></td>
+        </tr>
+        <tr>
+            <td class="td"><strong>HSC</strong></td>
+            <td class="tdata"> <strong>KSKW College,Nashik</strong></td>
+            <td class="tdata"><strong>Pune University</strong></td>
+            <td class="tdata"> <strong>62%</strong></td>
+        </tr>
+
+        <tr>
+            <td class="td"><strong>SSC</strong></td>
+            <td class="tdata"><strong>K.B.H. Vidyalaya,Nashik</strong></td>
+            <td class="tdata"><strong>Pune University</strong></td>
+            <td class="tdata"><strong>80%</strong></td>
+        </tr>
+    </table>
 </body>
 
 

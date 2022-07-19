@@ -9,12 +9,12 @@
     <style>
         table,
         th,
-        td {
+        td{
             border: 1px solid black;
             background-color: lightgrey;
             width: 400px;
             font-family: 'Roboto', sans-serif;
-            
+            border-collapse: collapse;
         }
         .td{
             padding-left: 50px;
@@ -27,6 +27,11 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color: darkblue;
         }
+        td:focus{
+            background-color: yellow;
+        }
+        
+
     </style>
 </head>
 
@@ -38,7 +43,7 @@
         <tbody>
             <tr>
                 <td class="td" rowspan="5"><strong>Technologies</strong></td>
-                <td class="tdata"> <strong>HTML5 , CSS</strong></td>
+                <td class="tdata"><strong>HTML5 , CSS</strong></td>
             </tr>
             <tr>
                 <td class="tdata"><strong>Bootstrap</strong></td>

@@ -96,18 +96,97 @@
             text-shadow: 3px 3px 6px cadetblue;
             text-transform: uppercase;
         }
-        #overflow_prop{
+
+        #overflow_prop {
             width: 200px;
             height: 200px;
             border: 1px solid cadetblue;
             overflow: auto;
-            box-shadow: 5px 5px 5px ;
+            box-shadow: 5px 5px 5px;
+        }
+
+        h4 {
+            display: inline-block;
+            border: 1px solid red;
+            width: 100px;
+            height: 50px;
+
+        }
+
+        /* dispaly Property */
+        /* .div4{
+            width: 200px;
+            height: 100px;
+            background-color: cadetblue;
+            display: none;
+         }
+         Viisibility Property
+         .div5{
+            width: 200px;
+            height: 100px;
+            background-color: rgb(159, 108, 19);
+            visibility: hidden;
+
+         } */
+        /* z-Index */
+        /* .div4{
+            width: 150px;
+            height: 150px;
+            background-color: cadetblue;
+            position: absolute;
+            margin-top: 50px;
+            z-index: 3;
          }
 
+         .div5{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(177, 29, 29);
+            z-index: 2;
+         } */
+
+        .div4 {
+            position: static;
+            border: 1px solid blue;
+            background-color: rgb(177, 29, 29);
+            width: 300px;
+            height: 100px;
+
+        }
+
+        .div5 {
+            position: relative;
+            border: 1px solid blue;
+            background-color: rgb(184, 107, 8);
+            width: 300px;
+            height: 100px;
+
+        }
+
+        .div6 {
+            position: absolute;
+            border: 1px solid blue;
+            width: 300px;
+            height: 100px;
+            top: 750px;
+            left: 15px;
+
+        }
     </Style>
 </head>
 
 <body>
+
+    <div class="div4">
+        <p>This in Paragraph 1</p>
+    </div>
+
+    <div class="div5">
+        <p>This in Paragraph 2</p>
+    </div>
+    <div class="div6">
+        <p>This in Paragraph 3</p>
+    </div>
     <ul id="ul">
         <li>Reading educational book</li>
         <li>Listening music </li>
@@ -121,11 +200,15 @@
         <li>Learning new things</li>
     </ul>
 
-    <p id="overflow_prop">  the main body of a book or other piece of writing, as distinct from other material such as notes, appendices, and illustrations.
-        "the pictures are clear and relthe main body of a book or other piece of writing, as distinct from other material such as notes, appendices, and illustrations.
-        "the pictures are clear and relthe main body of a book or other piece of writing, as distinct from other material such as notes, appendices, and illustrations.
-     "the pictures are clear and relthe main body of a book or other piece of writing, as distinct from other material such as notes, appendices, and illustrations.
-     </p>
+    <p id="overflow_prop"> the main body of a book or other piece of writing, as distinct from other material such as
+        notes, appendices, and illustrations.
+        "the pictures are clear and relthe main body of a book or other piece of writing, as distinct from other
+        material such as notes, appendices, and illustrations.
+        "the pictures are clear and relthe main body of a book or other piece of writing, as distinct from other
+        material such as notes, appendices, and illustrations.
+        "the pictures are clear and relthe main body of a book or other piece of writing, as distinct from other
+        material such as notes, appendices, and illustrations.
+    </p>
 
 
     <p class="para1">This is a Paragraph 1</p>
@@ -137,8 +220,8 @@
     </p>
     <h4>This is a heading 4</h4>
     <h4>This is a heading 5</h4>
-    <h4 id="heading_7">This is a heading 6</h4>
-    <h4>This is a heading 7</h4>
+    <!-- <h4 id="heading_7">This is a heading 6</h4> -->
+    <!-- <h4>This is a heading 7</h4> -->
 
     <h5 id="summary">This is a heading 5</h5>
     <h3>This is a heading 3</h3>
